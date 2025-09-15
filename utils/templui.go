@@ -1,4 +1,4 @@
-// templui util templui.go - version: v0.93.0 installed by templui v0.93.0
+// templui util templui.go - version: v0.97.0 installed by templui v0.97.0
 package utils
 
 import (
