@@ -17,6 +17,7 @@ func main() {
 	SetupAssetsRoutes(mux)
 	mux.Handle("GET /", templ.Handler(pages.Landing()))
 	mux.Handle("GET /testing", templ.Handler(pages.Testing()))
+	mux.Handle("GET /tabs", templ.Handler(pages.PageTabs()))
 	fmt.Println("Server is running on http://localhost:8090")
 	http.ListenAndServe(":8090", mux)
 }

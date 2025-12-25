@@ -1,6 +1,11 @@
 package layouts
 
 import "github.com/templui/templui-quickstart/ui/modules"
+import "github.com/templui/templui-quickstart/ui/components/dialog"
+import "github.com/templui/templui-quickstart/ui/components/datepicker"
+import "github.com/templui/templui-quickstart/ui/components/calendar"
+import "github.com/templui/templui-quickstart/ui/components/popover"
+import "github.com/templui/templui-quickstart/ui/components/tabs"
 
 templ BaseLayout() {
 	<!DOCTYPE html>
@@ -10,6 +15,11 @@ templ BaseLayout() {
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<!-- Tailwind CSS (output) -->
 			<link href="/assets/css/output.css" rel="stylesheet"/>
+			@dialog.Script()
+			@datepicker.Script()
+			@calendar.Script()
+			@popover.Script()
+			@tabs.Script()
 		</head>
 		<body class="h-full">
 			<div class="h-full flex flex-col">
